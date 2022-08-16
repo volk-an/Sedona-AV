@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: SEDONA</title>
+</head>
+
+<body class="page__body">
+  <div class="page__container">
+    <header class="page-header page-header-inner">
+      <nav class="main-nav">
+        <div class="content-center">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="blank.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="blank.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="blank.html">Html-Academy</a>
+            </li>
+          </ul>
+          <button class="main-nav__close"><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"
+                fill="white" />
+            </svg></button>
+        </div>
+      </nav>
+      <div class="content-center">
+        <button class="page-header__button" aria-label="Открыть меню">
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+          </svg>
+        </button>
+        <a class="page-header__logo">
+          <img src="img/svg/logotype-mobile.svg" alt="Логотип Sedona">
+        </a>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Страница обратной связи</h1>
+      <section class="intro">
+        <h2 class="intro__header">Оставьте свой отзыв</h2>
+        <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <section class="review">
+        <h2 class="visually-hidden">Форма отзыва</h2>
+        <form class="review__form review-form">
+          <fieldset class="review-form__fildset user-name">
+            <p class="review-form__fieldset-title">Представьтесь</p>
+            <label class="review-form__lebel user-name__label" for="first-name">Имя<sub>*</sub>:
+              <input class="user-name__input" type="text" id="first-name" name="first-name" value="Петр">
+            </label>
+            <label class="review-form__lebel user-name__label" for="last-name">Фамилия<sub>*</sub>:
+              <input class="user-name__input" type="text" id="last-name" name="last-name" value="Иванов">
+            </label>
+            <label class="review-form__lebel user-name__label" for="father's-name">Отчество<sub>*</sub>:
+              <input class="user-name__input" type="text" id="father's-name" name="father's-name" value="Александрович">
+            </label>
+          </fieldset>
+          <fieldset class="review-form__fildset user-contacts">
+            <p class="review-form__fieldset-title">Контактная информация:</p>
+            <label class="review-form__lebel user-contacts__label" for="user-phone">Контактный телефон<sub>*</sub>:
+              <input class="user-contacts__input" type="tel" id="user-phone" name="user-phone" value="Петр">
+            </label>
+            <label class="review-form__lebel user-name__label" for="user-email">Электронная почта<sub>*</sub>:
+              <input class="user-contacts__input" type="email" id="user-email" name="user-email" placeholder="Введите e-mail">
+            </label>
+          </fieldset>
+          <fieldset class="review-form__fildset user-impression">
+            <p class="review-form__fieldset-title">Ваше общее впечатление:</p>
+            <label class="review-form__lebel user-impression__lebel" for="positive">Скорее положительное
+              <input class="user-impression__input" type="radio" id="positive" name="positive" checked>
+            </label>
+            <label class="review-form__lebel user-impression__lebel" for="negative">Скорее отрицательное
+              <input class="user-impression__input" type="radio" id="negative" name="negative">
+            </label>
+            <label class="review-form__lebel user-impression__label" for="uncertain">Затрудняюсь ответить
+              <input class="user-impression__input" type="radio" id="uncertain" name="uncertain">
+            </label>
+          </fieldset>
+          <fieldset class="review-form__fildset visited-spot">
+            <p class="review-form__fieldset-title">Посещенные достопримечательности:</p>
+            <label class="review-form__lebel visited-spot__lebel" for="bridge">Мост Дьявола
+              <input class="visited-spot__input" type="checkbox" id="bridge" name="bridge" checked>
+            </label>
+            <label class="review-form__lebel visited-spot__lebel" for="mountain">Гора-Колокол
+              <input class="visited-spot__input" type="checkbox" id="mountain" name="mountain">
+            </label>
+            <label class="review-form__lebel visited-spot__label" for="slide-park">Слайд-парк
+              <input class="visited-spot__input" type="checkbox" id="slide-park" name="slide-park">
+            </label>
+            <label class="review-form__lebel visited-spot__label" for="rock">Красные скалы
+              <input class="visited-spot__input" type="checkbox" id="rock" name="rock">
+            </label>
+          </fieldset>
+          <fieldset class="review-form__fildset user-emotions">
+            <p class="review-form__fieldset-title">Опишите свои эмоции:</p>
+            <textarea class="user-emotions__input" type="text" placeholder="Опишите подробно все свои восторги ">
+          </fieldset>
+          <button class="review-form__button button" type="submit">Отправить отзыв</button>
+        </form>
+      </section>
+      <section class="modal-message modal-message--success">
+        <h2 class="modal-message__header">Ваш отзыв отправлен!</h2>
+        <p class="modal-message__text">Ваш отзыв отправлен!Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="modal-message__button button">Закрыть окно</button>
+       </section>
+       <section class="modal-message modal-message--fail">
+        <h2 class="modal-message__header">Что-то пошло не так!</h2>
+        <p class="modal-message__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-message__button button">Ок</button>
+       </section>
+    </main>
+
+
+  </div>
+
+</body>
